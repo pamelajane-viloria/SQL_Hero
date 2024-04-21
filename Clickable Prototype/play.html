@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    </head>
+    <body>
+        <main class="relative h-screen">
+            <a href="home.html" class="absolute top-0 left-0 m-4"><img src="assets/images/close.svg" alt="close" class="w-7"/></a>
+            <section class="flex p-5">
+                <div class="w-1/2 px-8 mt-6">
+                    <div class="w-full bg-gray-200 rounded-full h-4 my-4">
+                        <div class="bg-blue-600 h-4 rounded-full" style="width: 45%"></div>
+                    </div>                
+                    <h1>Select All</h1>
+                    <p> Imagine you have a friend's contact list. To see all their contacts, you'd say, "Hey, can you show me ALL the information in your 'contacts' list?" In SQL, to get all data from a table named "customers," you'd use the SELECT * symbol.</p>
+                    <img src="assets/images/person.svg" alt="person" class="h-40 inline-block mt-4"/>
+                    <span class="speech-bubble ms-4 rounded-lg">Display all data from a table named "customers"</span>
+                    <div class="container border-b bg-white h-12 my-3">
+                    </div>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">Select</button>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">from</button>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">AND</button>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">OR</button>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">*</button>
+                    <button class="py-3 px-5 mb-1 font-semibold bg-white rounded-lg border border-gray-300 font-mono">customers</button>
+                </div>
+                <div class="w-1/2 px-8 mt-6">
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">Customer ID</th>
+                                    <th scope="col" class="px-6 py-3">Name</th>
+                                    <th scope="col" class="px-6 py-3">Email</th>
+                                    <th scope="col" class="px-6 py-3">Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">12345</td>
+                                    <td class="px-6 py-4">John Doe</td>
+                                    <td class="px-6 py-4">john@example.com</td>
+                                    <td class="px-6 py-4">123-456-7890</td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">67890</td>
+                                    <td class="px-6 py-4">Jane Smith</td>
+                                    <td class="px-6 py-4">jane@example.com</td>
+                                    <td class="px-6 py-4">987-654-3210</td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">67890</td>
+                                    <td class="px-6 py-4">Jane Smith</td>
+                                    <td class="px-6 py-4">jane@example.com</td>
+                                    <td class="px-6 py-4">987-654-3210</td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">67890</td>
+                                    <td class="px-6 py-4">Jane Smith</td>
+                                    <td class="px-6 py-4">jane@example.com</td>
+                                    <td class="px-6 py-4">987-654-3210</td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">67890</td>
+                                    <td class="px-6 py-4">Jane Smith</td>
+                                    <td class="px-6 py-4">jane@example.com</td>
+                                    <td class="px-6 py-4">987-654-3210</td>
+                                </tr>
+                                <tr class="bg-white border-b">
+                                    <td class="px-6 py-4">67890</td>
+                                    <td class="px-6 py-4">Jane Smith</td>
+                                    <td class="px-6 py-4">jane@example.com</td>
+                                    <td class="px-6 py-4">987-654-3210</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="flex p-5 justify-end bg-gray-300 absolute bottom-0 w-full h-56 items-start">
+                <button class="custom-btn me-8">Check</button>
+            </section>
+        </main>
+    </body>
+</html>

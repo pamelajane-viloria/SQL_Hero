@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    </head>
+    <body>
+        <main class='flex flex-row relative'>
+            <nav class='h-screen fixed border-r border-gray-300 bg-white'>
+                <ul class='main-nav flex flex-col w-60 px-5 py-10 gap-5'>
+                    <li class='mb-5'>
+                        <a href=''><img src='assets/images/SQL Hero Logo.png' alt='SQL Hero Logo' class='h-10' /></a>
+                    </li>
+                    <li class='active p-3 rounded-lg hover:bg-gray-100 hover:ring-gray-100'>
+                        <a href='home.html' class="block">
+                            <img src='assets/images/home-1.svg' alt='Home' class='w-8 inline-block align-middle' />
+                            <span class='align-middle uppercase font-extrabold ms-4'>Home</span>
+                        </a>
+                    </li>
+                    <li class='p-3 rounded-lg hover:bg-gray-100 hover:ring-gray-100'>
+                        <a href='challenges.html' class="block">
+                            <img src='assets/images/challenges.svg' alt='Challenges' class='w-8 inline-block align-middle' />
+                            <span class='align-middle uppercase font-extrabold ms-4'>Challenges</span>
+                        </a>
+                    </li>
+                    <li class='p-3 rounded-lg hover:bg-gray-100 hover:ring-gray-100'>
+                        <a href='community.html' class="block">
+                            <img src='assets/images/community-1.svg' alt='Community' class='w-8 inline-block align-middle' />
+                            <span class='align-middle uppercase font-extrabold ms-4'>Community</span>
+                        </a>
+                    </li>
+                    <li class='p-3 rounded-lg hover:bg-gray-100 hover:ring-gray-100'>
+                        <a href='settings.html' class="block">
+                            <img src='assets/images/settings-1.svg' alt='Settings' class='w-8 inline-block align-middle' />
+                            <span class='align-middle uppercase font-extrabold ms-4'>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class='px-10 py-10 w-full'>
+                <div class='relative flex flex-col justify-between'>
+                    <section class='w-1/2 absolute ms-64'>
+                        <h1 class='text-xl font-bold'>Settings</h1>
+                        <h2 class="text-2xl font-bold mt-10 border-b-2 pb-2">Edit Profile</h2>
+                            <img src='https://www.svgrepo.com/show/492683/avatar-girl.svg' alt='Progress, rocket ship' class='w-24 mt-5' />
+                            <form class="mt-5 w-full">
+                                <ul>
+                                    <li class="mb-5">
+                                        <label htmlFor="username" class="block mb-2 font-medium">Username</label>
+                                        <input type="text" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your username here' />
+                                    </li>
+                                    <li class="mb-5">
+                                        <label htmlFor="username" class="block mb-2 font-medium">Email</label>
+                                        <input type="email" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your email here' />
+                                    </li>
+                                </ul>
+                                <button type="submit" class="custom-btn">Update</button>
+                            </form>
+                        <h2 class="text-2xl font-bold mt-10 border-b-2 pb-2">Change Password</h2>
+                        <form class="my-5 w-full">
+                            <ul>
+                                <li class="mb-5">
+                                    <label htmlFor="username" class="block mb-2 font-medium">Old Password</label>
+                                    <input type="text" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your old password here' />
+                                </li>
+                                <li class="mb-5">
+                                    <label htmlFor="username" class="block mb-2 font-medium">New Password</label>
+                                    <input type="email" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your new password here' />
+                                </li>
+                                <li class="mb-5">
+                                    <label htmlFor="username" class="block mb-2 font-medium">Confirm New Password</label>
+                                    <input type="email" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Confirm new password here' />
+                                </li>
+                            </ul>
+                            <button type="submit" class="custom-btn">Update Password</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

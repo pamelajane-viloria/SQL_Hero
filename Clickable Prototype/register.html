@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    </head>
+    <body>
+        <main>
+            <section>
+                <form class="max-w-md mx-auto my-24">
+                    <h1 class='font-bold text-4xl'>Start learning with us!</h1>
+                    <p class='text-gray-500 text-sm mt-2'>Already have an account? <a href="login.html" class='text-primary font-semibold'>Login here</a></p>
+                    <ul class='mt-5'>
+                        <li class="mb-5">
+                            <label for="username" class="block mb-2 font-medium">Your username <span class='text-red-600'>*</span></label>
+                            <input type="text" id="username" name='username' class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your username here' />
+                        </li>
+                        <li class="mb-5">
+                            <label for="email" class="block mb-2 font-medium">Your email <span class='text-red-600'>*</span></label>
+                            <input type="email" id="email" name='email' class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5" placeholder='Enter your email here' />
+                        </li>
+                        <li class="mb-5 relative">
+                            <label for="password" class="block mb-2 font-medium">Your password <span class='text-red-600'>*</span></label>
+                            <div class="relative">
+                                <input type="password" id="password" name='password' class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5 pr-10" placeholder='Enter your password here' />
+                                <span class="absolute top-2 right-0 flex items-center pr-3 pointer-events-none" onClick={handleShowPassword}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6 stroke-gray-600">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </li>                    
+                        <li class="mb-5 relative">
+                            <label for="confirm_password" class="block mb-2 font-medium">Re-enter your password <span class='text-red-600'>*</span></label>
+                            <div class="relative">
+                                <input type="password" id="confirm_password" class="text-sm bg-gray-50 border border-gray-300 rounded-lg focus:border-primary block w-full p-2.5 pr-10" placeholder='Re-enter your password here'/>
+                                <span class="absolute top-2 right-0 flex items-center pr-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6 stroke-gray-600">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" class="custom-btn w-full mt-5">
+                        <a href="login.html">Register</a>
+                    </button>            
+                </form>
+            </section>    
+        </main>
+    </body>
+</html>

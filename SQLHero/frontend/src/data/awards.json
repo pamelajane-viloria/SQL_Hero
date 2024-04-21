@@ -1,0 +1,20 @@
+{
+    "11": {
+        "name": "Beyond Basics",
+        "description": "You've graduated from the basics! The 'Beyond Basics' badge acknowledges your progress and expanding knowledge.",
+        "to_achieve": "Complete all 10 stages in easy level.",
+        "image": "achievement-beyond-basics.svg"
+    },
+    "21": {
+        "name": "Challenge Accepted",
+        "description": " Conquered a moderate challenge! You've earned the 'Challenge Accepted' badge.",
+        "to_achieve": "Complete all 10 stages in moderate level.",
+        "image": "achievement-challenge-accepted.svg"
+    },
+    "all": {
+        "name": "Mastermind",
+        "description": "You've pushed your limits and emerged victorious! The 'Mastermind' badge celebrates your impressive achievement.",
+        "to_achieve": "Complete all stages.",
+        "image": "achievement-mastermind.svg"
+    }
+}
